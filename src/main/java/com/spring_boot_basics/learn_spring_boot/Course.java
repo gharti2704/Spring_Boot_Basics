@@ -1,18 +1,28 @@
 package com.spring_boot_basics.learn_spring_boot;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Course {
-	private long id;
+
+	@Id
+	private Long id;
 	private String name;
 	private String author;
 	
-	public Course(long id, String name, String author) {
+	public Course(Long id, String name, String author) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.author = author;
 	}
 
-	public long getId() {
+	public Course() {
+
+	}
+
+	public Long getId() {
 		return id;
 	}
 
@@ -22,6 +32,15 @@ public class Course {
 
 	public String getAuthor() {
 		return author;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
 	}
 
 	@Override

@@ -13,9 +13,9 @@ public class CourseController {
 	public List<Course> getCourses()
 	{
 		return Arrays.asList(
-				new Course(1, "Learn Spring Boot", "Raju"),
-				new Course(2, "Spring Boot Basics", "Magar"),
-				new Course(3, "Spring Boot Starter", "Raju")
+				new Course(1L, "Learn Spring Boot", "Raju"),
+				new Course(2L, "Spring Boot Basics", "Magar"),
+				new Course(3L, "Spring Boot Starter", "Raju")
 				);
 	}
 
